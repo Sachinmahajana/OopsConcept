@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to the Oops Concept");
             Console.WriteLine("Please choose any one program given below");
-            Console.WriteLine("n1:Mghector\n2.JohnDeere\n3.MethodOverloading\n4.MethodOverriding");
+            Console.WriteLine("n1:Mghector\n2.JohnDeere\n3.MethodOverloading\n4.MethodOverriding\n5.Abstractions\n6.Encapsulation");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -42,6 +42,17 @@
                 case 4:
                      Dog tommy = new Dog();
                      tommy.Eat();
+                    break;
+                case 5:
+                    ParttimeEmployee myObj2 = new ParttimeEmployee();
+                    myObj2.name = "Rohit";
+                    myObj2.GetEmployeeDetails();
+                    myObj2.GetSalary();
+                    break;
+                case 6:
+                    A r = new A();
+                    r.SetValue(4567);
+                    Console.WriteLine("ATM PIN:" + r.GetReturn());
                     break;
                 default:
                     Console.WriteLine("Please select the program given below option");
