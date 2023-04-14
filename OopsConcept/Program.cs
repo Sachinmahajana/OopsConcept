@@ -7,6 +7,7 @@
             Console.WriteLine("Welcome to the Oops Concept");
             Console.WriteLine("Please choose any one program given below");
             Console.WriteLine("n1:Mghector\n2.JohnDeere\n3.MethodOverloading\n4.MethodOverriding\n5.Abstractions\n6.Encapsulation");
+            Console.WriteLine("\n7.ReverseNumber");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -54,6 +55,11 @@
                     r.SetValue(4567);
                     Console.WriteLine("ATM PIN:" + r.GetReturn());
                     break;
+                case 7:
+                    int input = Convert.ToInt32(Console.ReadLine());
+                    ReversrNumber.FindReverseFunction(input);
+                    break;
+                   
                 default:
                     Console.WriteLine("Please select the program given below option");
                     break;
